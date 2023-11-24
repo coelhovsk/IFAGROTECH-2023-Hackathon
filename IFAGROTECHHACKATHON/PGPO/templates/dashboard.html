@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/IFAGROTECHHACKATHON/PGPO/templates/dados.css">
+    <!-- <link rel="stylesheet" href="/IFAGROTECHHACKATHON/PGPO/static/css/util.css"> -->
+    <link rel="shortcut icon" href="agroTech logo.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <h1>Dados</h1>
+        <p>Forneça os dados necessários</p>
+    </header>
+    <nav>
+        <a href="produtos.html">Produtos</a>
+        <a href="#">Cadastrar Produto</a>
+        <a href="faleconosco.html">Fale Conosco</a>
+    </nav>
+
+    <div class="container pb-2">
+        <div class="d-flex">
+            <div>
+                <div id="fundoProdutos" class="mt-2 rounded-2 pb-2" style="width: 500px; background-color: #1a5c37;">
+                    <h1 class="text-center text-light">
+                        Produtos
+                    </h1>
+                    <div class="mx-2 rounded-2">
+
+                        <div class="m-2" style="height: 200px; overflow-y: auto;">
+                            <div class="m-1 mt-2 bg-light p-1 rounded-2">
+                                <div class="text-center fs-4">Cebola</div>
+                            </div>
+                            <div class="m-1 bg-light p-1 rounded-2">
+                                <div class="text-center fs-4">Tomate</div>
+                            </div>
+                            <div class="m-1 p-1 rounded-2" style="background-color: #83e1ad; border: 2px solid #1a5c37;">
+                                <div class="text-center fs-4">Alface</div>
+                            </div>
+                            <div class="m-1 bg-light p-1 rounded-2">
+                                <div class="text-center fs-4">Batata</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 mt-2 rounded-2" style="width: 500px; background-color: #1a5c37;">
+                    <h1 class="text-center text-light">Economia</h1>
+                    <div class="m-1 bg-light p-3 rounded-2">
+                        <h3 class="ms-3 my-1">Gastos</h3>
+                        <h1 class="text-center">R$ 5.836,14</h1>
+                    </div>
+                    <div class="m-1 bg-light p-3 rounded-2">
+                        <h3 class="ms-3 my-1">Bruto</h3>
+                        <h1 class="text-center">R$ 12.8662,45</h1>
+                    </div>
+                    <div class="m-1 bg-light p-3 rounded-2">
+                        <h3 class="ms-3 my-1">Lucro</h3>
+                        <h1 class="text-center">R$ 7.026,31</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ms-3 m-2 bg-light w-100 rounded-2 pb-2 shadow">
+                <div>
+                    <div class="m-3">
+                        <h1>Produtos colhidos</h1>
+                        <div style="height: 250px;">
+                            <canvas id="precoProduto"></canvas>
+                        </div>
+                    </div>
+                    <div class="m-3">
+                        <h1>Safra de Alface</h1>
+                        <div class="mt-2 d-flex justify-content-end" style="width: 350px; height: 300px;">
+                            <canvas id="qtdProduto"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('precoProduto');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+                datasets: [{
+                    label: 'Quantidade de produtos colhidos',
+                    data: [12, 19, 3, 5, 3, 4, 4, 8, 9, 20, 4, 4],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+        });
+
+        const ctx2 = document.getElementById('qtdProduto');
+
+        new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: ['Vendido', 'Consumido', 'Doado', 'Perdido'],
+                datasets: [{
+                    data: [12, 19, 3, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+            }
+        });
+
+        var options = {
+            series: [44, 55, 13, 43, 22],
+            chart: {
+                width: 380,
+                type: 'pie',
+            },
+            labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#graficoSafra"), options);
+        chart.render();
+
+
+
+    </script>
+
+</body>
+
+</html>
