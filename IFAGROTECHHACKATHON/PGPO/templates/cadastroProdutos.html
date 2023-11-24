@@ -21,6 +21,7 @@
     <nav>
         <a href="produtos.html">Produtos</a>
         <a href="#">Cadastrar Produto</a>
+        <a href="cadastroGeral.html">Cadastrar Custo Geral</a>
         <a href="faleconosco.html">Fale Conosco</a>
     </nav>
 
@@ -55,48 +56,15 @@
                 <label for="textInput">Colheita esperada(por unidade):</label>
                 <input class="form-control" type="text" id="qtdColheita">
                 <br>
-                <label for="numberInput">Quantidade de água(m<sup>3</sup>):</label>
-                <input class="form-control" type="number" id="qtdAgua">
-                <br>
-                <label for="numberInput">Preço da água(m<sup>3</sup>):</label>
-                <input class="form-control" type="number" id="precoAgua">
-                <br>
-                <!-- <label for="numberInput">Preço por Unidade:</label>
-                <input class="form-control" type="number" id="preçoProduto">
-                <br> -->
-                <label for="numberInput">Mão de obra(R$):</label>
-                <input class="form-control" type="number" id="custoMao">
-                <br>
-                <input class="form-check-input" type="checkbox" name="" id="usou" onchange="mudou()">
-                <label for="numberInput">Usou agrotóxico?</label>
-                <br><br>
-            <div id="agro">
-                <label for="numberInput">Custo do Agrotóxico:</label>
-                <input class="form-control" type="number" id="custoAgrotoxico"><br>
-            </div>
             <div class="text-center">
                 <button class="btn btn-success">Cadastrar</button>
             </div>
-            <!--Fornece: tipo de produto, uso de agrotóxico e quantidade e seu preço, preço da água no local e quantidade de água usado, custo da mão de obra-->
             </p>
         </form>
     </main>
     <footer>
         <p>PGPO &copy;2023</p>
     </footer>
-
-    <script>
-        document.getElementById("agro").style.display = "none"
-        let checkbox = document.getElementById("usou")
-        function mudou() {
-            if (checkbox.checked) {
-                document.getElementById("agro").style.display = ""
-            } else {
-                document.getElementById("agro").style.display = "none"
-            }
-        }
-        
-    </script>
 
 </body>
 
