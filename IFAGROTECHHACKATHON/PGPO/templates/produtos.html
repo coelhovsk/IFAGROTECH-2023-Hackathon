@@ -32,10 +32,10 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
+                            <td style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#novembro" style="height: 25px">
                                 Novembro
                               </button></td>
-                            <td>R$4829,78</td>
+                            <td>R$9881,40</td>
                         </tr>
                         </tbody></table></div>
             <div>
@@ -149,7 +149,7 @@
                     <tr>
                         <th>Lucro Previsto</th>
                         <td>
-                            <input class="form-control" type="number" id="lucroPre" value="8742.19" readonly>
+                            <input class="form-control" type="number" id="lucroPre" value="7742.19" readonly>
                         </td>
                     </tr>
                     </table>
@@ -211,7 +211,49 @@
       </div>
     </div>
   </div>
-
+  <div class="modal fade" id="novembro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Mês</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <table class="table table-secondary">
+                <tr>
+                    <th>Quantidade de água(m<sup>3</sup>)</th>
+                    <td>
+                        <input class="form-control" type="number" placeholder="0" value="1532">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Preço da água (m<sup>3</sup>)</th>
+                    <td>
+                        <input class="form-control" type="number" placeholder="0" value="6.45">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mão de obra</th>
+                    <td>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">R$</span>
+                            <input type="number" min="0.0" step=".05" class="form-control" placeholder="3512.42" aria-label="Username" aria-describedby="basic-addon1" value="0,00">
+                          </div>
+                    </td>
+                </tr>
+                <tr>
+        
+                </tr> 
+            </table>
+            
+            <div class="text-center">
+                <a href="#salvarProduto" class="btn btn-success">Salvar</a>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
         <footer>
             <p>PGPO &copy;2023</p>
         </footer>
