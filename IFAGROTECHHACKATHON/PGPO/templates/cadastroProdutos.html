@@ -19,6 +19,7 @@
         <p>Forneça os dados necessários</p>
     </header>
     <nav>
+        <a href="home.html">Início</a>
         <a href="produtos.html">Produtos</a>
         <a href="#">Cadastrar Produto</a>
         <a href="faleconosco.html">Fale Conosco</a>
@@ -33,11 +34,14 @@
                 <label for="numberInput">Quantidade do Produto(unidade):</label>
                 <input class="form-control" type="number" id="qtdProduto">
                 <br>
+                <label for="numberInput">Custo do Produto(R$):</label>
+                <input class="form-control" type="number" id="precoProduto">
+                <br>
                 <label for="textInput">Data de plantio:</label>
-                <input class="form-control" type="date" id="tipProduto">
+                <input class="form-control" type="date" id="dataPlantio">
                 <br>
                 <label for="textInput">Tempo esperado de colheita:</label>
-                <input class="form-control" type="text" id="tipProduto">
+                <input class="form-control" type="text" id="tempoColheita">
                 <div class="d-flex">
                     <div>
                         <input class="form-check-input" type="radio" name="" id="">
@@ -49,27 +53,27 @@
                     </div>
                 </div>
                 <br>
-                <label for="textInput">Colheita esperada(unidade):</label>
-                <input class="form-control" type="text" id="tipProduto">
+                <label for="textInput">Colheita esperada(por unidade):</label>
+                <input class="form-control" type="text" id="qtdColheita">
                 <br>
-                <label for="numberInput">Quantidade de água(L/m<sup>2</sup>):</label>
-                <input class="form-control" type="number" id="qtdProduto">
+                <label for="numberInput">Quantidade de água(m<sup>3</sup>):</label>
+                <input class="form-control" type="number" id="qtdAgua">
                 <br>
-                <label for="numberInput">Preço da água(L/m<sup>2</sup>):</label>
-                <input class="form-control" type="number" id="qtdProduto">
+                <label for="numberInput">Preço da água(m<sup>3</sup>):</label>
+                <input class="form-control" type="number" id="precoAgua">
                 <br>
-                <label for="numberInput">Preço por Unidade:</label>
+                <!-- <label for="numberInput">Preço por Unidade:</label>
                 <input class="form-control" type="number" id="preçoProduto">
-                <br>
+                <br> -->
                 <label for="numberInput">Mão de obra(R$):</label>
-                <input class="form-control" type="number" id="preçoProduto">
+                <input class="form-control" type="number" id="custoMao">
                 <br>
                 <input class="form-check-input" type="checkbox" name="" id="usou" onchange="mudou()">
                 <label for="numberInput">Usou agrotóxico?</label>
                 <br><br>
             <div id="agro">
                 <label for="numberInput">Custo do Agrotóxico:</label>
-                <input class="form-control" type="number" id="preçoProduto"><br>
+                <input class="form-control" type="number" id="custoAgrotoxico"><br>
             </div>
             <div class="text-center">
                 <button class="btn btn-success">Cadastrar</button>
