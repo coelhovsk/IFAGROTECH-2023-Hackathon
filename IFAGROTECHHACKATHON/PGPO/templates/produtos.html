@@ -22,34 +22,88 @@
     
         <main>
             <div>
-                <h1>Lista  Produtos</h1>
+                <h1>Meses</h1>
                 <table class="table table-secondary">
                     <thead>
                         <tr>
-                            <th>Nome</th>
-                            <th>Preço</th>
-                            <th>Área de plantio(m<sup>2</sup>)</th>
-                            <th>Quantidade de água(m<sup>3</sup>)</th>
+                            <th>Mês</th>
+                            <th>Gasto Geral</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
-                                Arroz
+                                Novembro
                               </button></td>
-                            <td>R$ 00,00</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td>R$4829,78</td>
+                        </tr>
+                        </tbody></table></div>
+            <div>
+                <h1>Lista de Produtos</h1>
+                <table class="table table-secondary">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Custo</th>
+                            <th>Área de plantio (m<sup>2</sup>)</th>
+        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
+                                Alface
+                              </button></td>
+                            <td>R$ 5836,14</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
+                                Tomate
+                              </button></td>
+                            <td>R$ 1252,86</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
+                                Batata
+                              </button></td>
+                            <td>R$ 2542,72</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
+                                Maçã
+                              </button></td>
+                            <td>R$ 1067,02</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
+                                Melancia
+                              </button></td>
+                            <td>R$ 3671,92</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
+                                Cebola
+                              </button></td>
+                            <td>R$ 1986,48</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;"><button type="button" class="btn btn-transparent d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 25px">
+                                Cebolinha
+                              </button></td>
+                            <td>R$ 536,14</td>
+                            <td>30</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </main>
   
-<!-- Button trigger modal -->
-
-  
-  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -62,7 +116,7 @@
                     <tr>
                         <th>Nome</th>
                         <td>
-                            <input class="form-control" type="text" value="Arroz">
+                            <input class="form-control" type="text" value="Alface">
                         </td>
                     </tr>
                     <tr>
@@ -70,53 +124,85 @@
                         <td>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">R$</span>
-                                <input type="number" min="0.0" step=".05" class="form-control" placeholder="0,00" aria-label="Username" aria-describedby="basic-addon1" value="0,00" readonly>
+                                <input type="number" min="0.0" step=".05" class="form-control" placeholder="5836,14" aria-label="Username" aria-describedby="basic-addon1" value="0,00" readonly>
                               </div>
                         </td>
                     </tr>
                     <tr>
                         <th>Área de plantio(m<sup>2</sup>)</th>
                         <td>
-                            <input class="form-control" type="number" placeholder="0" value="0" readonly>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Quantidade de água(m<sup>3</sup>)</th>
-                        <td>
-                            <input class="form-control" type="number" placeholder="0" value="0">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Mão de obra</th>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1">R$</span>
-                                <input type="number" min="0.0" step=".05" class="form-control" placeholder="0,00" aria-label="Username" aria-describedby="basic-addon1" value="0,00">
-                              </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Custo do agrotóxico</th>
-                        <td>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1">R$</span>
-                                <input type="number" min="0.0" step=".05" class="form-control" placeholder="0,00" aria-label="Username" aria-describedby="basic-addon1" value="0,00">
-                              </div>
+                            <input class="form-control" type="number" placeholder="0" value="250" readonly>
                         </td>
                     </tr>
                     <tr>
                         <th>Data de plantio</th>
                         <td>
-                            <input class="form-control" type="date" id="tipProduto" readonly>
+                            <input class="form-control" type="date" id="dataPlantio" value="2023-11-24" readonly>
                         </td>
                     </tr>
                     <tr>
                         <th>Data de colheita</th>
                         <td>
-                            <input class="form-control" type="date" id="tipProduto" readonly>
+                            <input class="form-control" type="date" id="dataColheita" value="2023-12-29"readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Lucro Previsto</th>
+                        <td>
+                            <input class="form-control" type="number" id="lucroPre" value="8742.19" readonly>
+                        </td>
+                    </tr>
+                    </table>
+                    <table class="table table-secondary">
+                    <tr>
+                        <th>Preço vendido final</th>
+                        <td>
+                            <input class="form-control" type="number" id="precoFinal" value="12862.45">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Quantidade vendida (KG)</th>
+                        <td>
+                            <input class="form-control" type="number" id="qtdVendida" value="2893">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Quantidade perdida (KG)</th>
+                        <td>
+                            <input class="form-control" type="number" id="qtdPerdida" value="17">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Lucro final</th>
+                        <td>
+                            <input class="form-control" type="number" id="lucroFinal" value="7026.31" >
                         </td>
                     </tr>
             </table>
+            <!-- <tr>
+                <th>Quantidade de água(m<sup>3</sup>)</th>
+                <td>
+                    <input class="form-control" type="number" placeholder="0" value="0">
+                </td>
+            </tr>
+            <tr>
+                <th>Mão de obra</th>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">R$</span>
+                        <input type="number" min="0.0" step=".05" class="form-control" placeholder="0,00" aria-label="Username" aria-describedby="basic-addon1" value="0,00">
+                      </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Custo do agrotóxico</th>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">R$</span>
+                        <input type="number" min="0.0" step=".05" class="form-control" placeholder="0,00" aria-label="Username" aria-describedby="basic-addon1" value="0,00">
+                      </div>
+                </td>
+            </tr> -->
             <div class="text-center">
                 <a href="#salvarProduto" class="btn btn-success">Salvar</a>
             </div>
@@ -126,7 +212,7 @@
     </div>
   </div>
 
-        <footer style="position: fixed; bottom: 0; width: 100vw;">
+        <footer>
             <p>PGPO &copy;2023</p>
         </footer>
 
